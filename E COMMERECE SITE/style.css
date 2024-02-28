@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 64px;
+    color : black; 
+}
+h2{
+    font-size: 36px;
+    color : black; 
+}
+h3{
+    font-size: 30px;
+    color : black; 
+}
+h4{
+    font-size: 24px;
+    color : black; 
+}
+h5{
+    font-size: 28px;
+    color : black; 
+}
+h6{
+    font-size: 16px;
+    color : black; 
+}
+.logo
+{
+    height: 10vh;
+  
+}
+.cart
+{
+    height: 5vh;
+}
+#header{
+    display : flex; 
+    justify-content: space-around;
+    align-items: center;
+    padding : 10px 10px; 
+    background : #E3E6F3; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    z-index: 999;
+    position: sticky;
+    top : 0; 
+    left : 0; 
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width : 100%; 
+}
+#navbar li{
+    position : relative; 
+    list-style-type: none; 
+    padding :0 20px; 
+}
+#navbar a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color : #1a1a1a; 
+    transition : 1s ease; 
+}
+#navbar li a:hover, 
+#navbar li a.active{
+    color : #088178; 
+}
+
+#navbar li a.active::after, 
+#navbar li a.active:hover::after{
+    content : ""; 
+    height : 2px; 
+    width : 40%; 
+    background : #088178; 
+    position : absolute; 
+    bottom : -4px ; 
+    left : 20px; 
+}  
+/* Home page */
+.hero{
+    background-color: #E3E6F3 ;
+    width : 100% ;
+    height : 90vh; 
+    display: flex;
+    flex-direction: column;
+    /* gap : 20px;  */
+    align-items: flex-start;
+    justify-content: center;
+    padding : 0px 80px  ; 
+ 
+
+}
+.frontimg{
+  height : 80%; 
+  width : 60%; 
+ object-fit: contain;
+ position: absolute;
+ left : 35vw; 
+ bottom : -5.55vh; 
+
+}
+.section-p1{
+    padding: 40px 80px;  
+}
+h3{
+    padding-bottom : 20px; 
+
+}
+h1{
+    padding-bottom: 40px; 
+    color : #088178; 
+}
+.shopnow{
+    background : url("assets/button.png"); 
+    color : #088178;
+    border : 0px; 
+    padding : 14px 80px 14px 65px; 
+    background-repeat: no-repeat;
+    font-size: 15px;
+    font-weight: 700;
+}
+#features .fe-box{
+    width : 180px; 
+    text-align: center;
+    padding : 25px 15px; 
+    box-shadow : 20px 20px 34px rgba(34, 30, 30, 0.1); 
+    border : 1px solid #cce7d0; 
+    border-radius: 4px;
+    margin : 15px 0; 
+    transition: 0.5s linear;
+}
+#features .fe-box:hover{
+    box-shadow : 10px 10px 54px rgba(0, 0, 0, 0.5);
+}
+#features .fe-box img{
+    margin-bottom: 15px;
+    width : 100%; 
+}
+#features .fe-box h6{
+    display: inline-block;
+    padding : 9px 8px 6px 10px; 
+    line-height: 1;
+    border-radius : 4px; 
+    color : #088718; 
+    background-color: #fddde4; ;
+}
+.wrap-features{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap : 20px; 
+    /* flex-wrap: wrap; */
+}
+#features .fe-box:nth-child(2) h6{
+    background-color: #d0dfe6;
+}
+#features .fe-box:nth-child(3) h6{
+    background-color: #dce1c0;
+}
+#features .fe-box:nth-child(4) h6{
+    background-color: #cdd4f8;
+}
+#features .fe-box:nth-child(5) h6{
+    background-color: #f6dbf6;
+}
+#features .fe-box:nth-child(6) h6{
+    background-color: #f1dbc5;
+}
+.star
+{
+    height : 15%; 
+    width : 10%; 
+}
+#product1{
+    text-align: center;
+}
+#product1 .pro{
+    width : 23%; 
+    min-width : 250px; 
+    padding: 10px 15px; 
+    border  : 1px solid #fff9f9;
+    border-radius: 25px ; 
+    cursor : pointer; 
+    transition: 0.5s linear;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.19);
+    transform: scale(1.05);
+
+}
+#product1 .pro img{
+ width : 100%; 
+ border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding : 10px 0px; 
+}
+#product1 .pro .des span{
+    font-size: 19px; 
+    color :#606063;
+}
+#product1 .pro .des h6{
+    color : #6cb5d7
+}
+.cart{
+        position: relative;
+        left : 40%;
+        line-height: 40px;
+    border-radius: 50%;
+    background-color: #171a2a;
+    font-weight: 500;
+    color : #088178;  
+}
